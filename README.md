@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/lgs-vue.svg)](https://badge.fury.io/js/lgs-vue)
+
 # lgs-vue
 
 > A library of Vue.js components build and maintained by Little Green Software in Durham, NC, USA.
