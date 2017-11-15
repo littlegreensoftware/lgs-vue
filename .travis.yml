@@ -1,0 +1,12 @@
+language: node_js
+
+node_js:
+  - "7"
+
+install:
+  - npm i -g vue-cli@2.8.2
+  - npm i
+
+script:
+  - npm run unit
+  - cd src && vue build index.js --prod --lib
