@@ -17,6 +17,10 @@ To publish to NPM, copy the `package.tpl.json` file into `dist`, update the vers
 
 Also, please update the version number in `package.tpl.json` and the root `package.json` to reflect the latest version number.
 
+## Usage
+
+For usage information, [see the docs](//github.com/littlegreensoftware/lgs-vue/wiki).
+
 ## To-dos
 
 - automate versioning from the command line

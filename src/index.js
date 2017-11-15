@@ -1,5 +1,5 @@
-import LgsSpinner from 'LgsSpinner';
+import LgsSpinner from 'LgsSpinner'
 
 export {
   LgsSpinner
-};
+}

@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/lgs-vue.svg)](https://badge.fury.io/js/lgs-vue)
+
 # lgs-vue
 
 > A library of Vue.js components build and maintained by Little Green Software in Durham, NC, USA.
@@ -14,6 +16,10 @@ Then, navigate to that directory in your terminal and run `vue build index.js --
 To publish to NPM, copy the `package.tpl.json` file into `dist`, update the version number, and run npm publish from the command line. (You'll need to be auth'd on npm).
 
 Also, please update the version number in `package.tpl.json` and the root `package.json` to reflect the latest version number.
+
+## Usage
+
+For usage information, [see the docs](//github.com/littlegreensoftware/lgs-vue/wiki).
 
 ## To-dos
 
