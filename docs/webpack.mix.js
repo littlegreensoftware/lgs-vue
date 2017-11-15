@@ -13,7 +13,7 @@ let mix = require('laravel-mix');
 
 mix.js('js/src/main.js', 'js/app.js')
   .sourceMaps()
-  .sass('scss/style.scss', 'css/app.css', {
+  .sass('scss/style.scss', 'css/', {
     precision: 8
   })
   .options({

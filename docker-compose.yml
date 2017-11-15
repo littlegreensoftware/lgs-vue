@@ -6,5 +6,6 @@ services:
     build: .
     command: ['npm', 'run', 'start']
     volumes:
-      - ./dev-center/js:/usr/src/app/js:cached
-      - ./dev-center/scss:/usr/src/app/scss:cached
+      - ./docs/css:/usr/src/app/css:cached
+      - ./docs/js:/usr/src/app/js:cached
+      - ./docs/scss:/usr/src/app/scss:cached

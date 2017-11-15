@@ -1,0 +1,95 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>LGS Vue Dev Center</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+    <body class="font-sans">
+        <header>
+          <h1>LGS-Vue Docs</h1>
+        </header>
+
+      <nav class="fixed pin-l bg-grey-lighter">
+        <ul>
+          <li><a href="#installation">Installation</a></li>
+          <li><a href="#usage">Usage</a>
+            <ul>
+              <li><a href="#lgs-spinner">LgsSpinner</a></li>
+            </ul>
+          </li>
+          <li><a href="#updating-the-project">Updating the Project</a></li>
+        </ul>
+      </nav>
+
+      <main>
+
+        <section id="installation" class="container mx-auto">
+          <h2>Installation</h2>
+
+          <p>This project is published to npm under the name lgs-vue.</p>
+          <p>To install this project, include the package from npm.</p>
+        </section>
+
+        <section id="usage" class="container mx-auto">
+          <h2>Usage</h2>
+
+          <p>After installing the package via npm npm i lgs-vue, import whichever component/s you intend to use inside of your vue component, as well as the library stylesheet.</p>
+
+          <p>Then, include the component in your template as you would with any child component.</p>
+
+          <p>Example:</p>
+
+          <code class="code-block"><pre>
+example here: need code highlighting engine
+          </pre></code>
+
+
+          <section id="lgs-spinner" class="component">
+
+          <h3>LgsSpinner</h2>
+              <div class="example">
+                <lgs-spinner class="mx-auto my-4" :active="true" stroke-color="#9561e2"></lgs-spinner>
+              </div>
+                  <code class="code-block"><pre>
+<<span>lgs-spinner</span>
+  :active="true"
+  stroke-color="#9561e2">
+<<span>/lgs-spinner></span>
+                  </pre></code>
+              <div class="props">
+                <h4>Props</h4>
+                <dl>
+                  <dt>active</dt>
+                  <dd>type: boolean</dd>
+                  <dd>default: true</dd>
+                  <dd>purpose: determines whether or not the component renders to the page</dd>
+                  <dt>strokeColor</dt>
+                  <dd>type: string</dd>
+                  <dd>default: #111111</dd>
+                  <dd>sets the color of the spinner wheel</dd>
+                </dl>
+              </div>
+            </section>
+        </section>
+
+        <section id="updating-the-project" class="container mx-auto">
+          <h2>Updating the Project</h2>
+
+          <p>We're leveraging the vue-cli to build modules ready for distribution. Inside of src you can create a new component as a *.vue file. When ready to distribute, edit index.js to import and export you component. Then, navigate to that directory in your terminal and run vue build index.js --prod --lib. This will package everything up in the dist folder.</p>
+
+          <p>To publish to NPM, copy the package.tpl.json file into dist, update the version number, and run npm publish from the command line. (You'll need to be auth'd on npm).</p>
+
+          <p>Also, please update the version number in package.tpl.json and the root package.json to reflect the latest version number.</p>
+
+        </section>
+
+      </main>
+
+      <script src="js/app.js"></script>
+    </body>
+</html>
