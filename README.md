@@ -1,4 +1,5 @@
-[![npm version](https://badge.fury.io/js/lgs-vue.svg)](https://badge.fury.io/js/lgs-vue)
+[![npm version](https://badge.fury.io/js/lgs-vue.svg)](https://www.npmjs.com/package/lgs-vue)
+[![build status](https://travis-ci.org/littlegreensoftware/lgs-vue.svg?branch=master)](https://travis-ci.org/littlegreensoftware/lgs-vue)
 
 # lgs-vue
 
