@@ -20,9 +20,7 @@ Also, please update the version number in `package.tpl.json` and the root `packa
 
 ## Usage
 
-For usage information, [see the docs](//github.com/littlegreensoftware/lgs-vue/wiki).
-
-Also, check out the [live demo](//littlegreensoftware.github.io/lgs-vue/)
+For usage information, [see the docs](//littlegreensoftware.github.io/lgs-vue/docs).
 
 ## To-dos
 
