@@ -10,9 +10,9 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
   </head>
     <body class="font-sans">
-        <header>
-          <h1>LGS-Vue Docs</h1>
-        </header>
+      <header>
+        <h1>LGS-Vue Docs</h1>
+      </header>
 
       <nav class="fixed pin-l bg-grey-lighter">
         <ul>
@@ -20,6 +20,7 @@
           <li><a href="#usage">Usage</a>
             <ul>
               <li><a href="#lgs-spinner">LgsSpinner</a></li>
+              <li><a href="#lgs-alert">LgsAlert</a></li>
             </ul>
           </li>
           <li><a href="#updating-the-project">Updating the Project</a></li>
@@ -44,37 +45,38 @@
 
           <p>Example:</p>
 
-          <code class="code-block"><pre>
-example here: need code highlighting engine
-          </pre></code>
-
+          <code class="code-block">
+            <pre>example here: need code highlighting engine</pre>
+          </code>
 
           <section id="lgs-spinner" class="component">
 
-          <h3>LgsSpinner</h2>
-              <div class="example">
-                <lgs-spinner class="mx-auto my-4" :active="true" stroke-color="#9561e2"></lgs-spinner>
-              </div>
-                  <code class="code-block"><pre>
-<<span>lgs-spinner</span>
-  :active="true"
-  stroke-color="#9561e2">
-<<span>/lgs-spinner></span>
-                  </pre></code>
-              <div class="props">
-                <h4>Props</h4>
-                <dl>
-                  <dt>active</dt>
-                  <dd>type: boolean</dd>
-                  <dd>default: true</dd>
-                  <dd>purpose: determines whether or not the component renders to the page</dd>
-                  <dt>strokeColor</dt>
-                  <dd>type: string</dd>
-                  <dd>default: #111111</dd>
-                  <dd>sets the color of the spinner wheel</dd>
-                </dl>
-              </div>
-            </section>
+            <h3>LgsSpinner</h3>
+            <div class="example">
+              <lgs-spinner class="mx-auto my-4" :active="true" stroke-color="#9561e2"></lgs-spinner>
+            </div>
+            <code class="code-block">
+              <pre>
+                <<span>lgs-spinner</span>
+                  :active="true"
+                  stroke-color="#9561e2">
+                <<span>/lgs-spinner></span>
+              </pre>
+            </code>
+            <div class="props">
+              <h4>Props</h4>
+              <dl>
+                <dt>active</dt>
+                <dd>type: boolean</dd>
+                <dd>default: true</dd>
+                <dd>purpose: determines whether or not the component renders to the page</dd>
+                <dt>strokeColor</dt>
+                <dd>type: string</dd>
+                <dd>default: #111111</dd>
+                <dd>sets the color of the spinner wheel</dd>
+              </dl>
+            </div>
+          </section>
         </section>
 
         <section id="updating-the-project" class="container mx-auto">
@@ -85,7 +87,6 @@ example here: need code highlighting engine
           <p>To publish to NPM, copy the package.tpl.json file into dist, update the version number, and run npm publish from the command line. (You'll need to be auth'd on npm).</p>
 
           <p>Also, please update the version number in package.tpl.json and the root package.json to reflect the latest version number.</p>
-
         </section>
 
       </main>
