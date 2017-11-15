@@ -7,9 +7,8 @@
 </template>
 
 <script>
-
   export default {
-    name: "LgsSpinner",
+    name: 'LgsSpinner',
     data: () => {
       return {
         size: 100,

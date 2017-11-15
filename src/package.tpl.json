@@ -1,7 +1,9 @@
-// this is a placeholder to be copied into 'dist' when ready to publish to npm
-
-// DON'T FORGET TO UPDATE THE VERSION IN THE TEMPLATE YOU COPIED
-// AND IN THE PROJECT ROOT BEFORE CHECKING INTO GITHUB
+/*
+** this is a placeholder to be copied into 'dist' when ready to publish to npm
+**
+** DON'T FORGET TO UPDATE THE VERSION IN THE TEMPLATE YOU COPIED
+** AND IN THE PROJECT ROOT BEFORE CHECKING INTO GITHUB
+*/
 
 {
   "name": "lgs-vue",
