@@ -22,6 +22,8 @@ Also, please update the version number in `package.tpl.json` and the root `packa
 
 For usage information, [see the docs](//github.com/littlegreensoftware/lgs-vue/wiki).
 
+Also, check out the [live demo](//littlegreensoftware.github.io/lgs-vue/)
+
 ## To-dos
 
 - automate versioning from the command line
