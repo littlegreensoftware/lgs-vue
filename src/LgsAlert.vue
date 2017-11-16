@@ -40,44 +40,62 @@
   }
 </script>
 
-<style lang="scss">
+<style>
 
   .lgs-alert {
     position: relative;
-
-    .close {
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      margin-right: 1em;
-      margin-top: 2em;
-
-      .btn-close {
-        color: #000000;
-        height: 20px;
-        width: 20px;
-      }
-    }
-    
-    &.flyin {
-      position: fixed;
-      z-index: 1000;
-      top: 50px;
-      right: -10000px;
-      width: 400px;
-      animation: slide 0.5s forwards;
-      -webkit-animation: slide 0.5s forwards;
-      animation-delay: 0.25s;
-      -webkit-animation-delay: 0.25s;
-      box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
-    }
   }
 
-  @keyframes slide {
+  .lgs-alert .close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin-right: 1em;
+    margin-top: 2em;
+  }
+
+  .lgs-alert .btn-close {
+    color: #000000;
+    height: 20px;
+    width: 20px;
+  }
+
+  .flyin {
+    position: fixed;
+    top: 50px;
+    right: -10000px;
+    width: 400px;
+    z-index: 1000;
+    -webkit-animation: slide 0.5s forwards;
+    -moz-animation: slide 0.5s forwards;
+    -ms-animation: slide 0.5s forwards;
+    -o-animation: slide 0.5s forwards;
+    animation: slide 0.5s forwards;
+    -webkit-animation-delay: 0.25s;
+    -moz-animation-delay: 0.25s;
+    -ms-animation-delay: 0.25s;
+    -o-animation-delay: 0.25s;
+    animation-delay: 0.25s;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  }
+
+  @-moz-keyframes slide {
+    100% { right: 10px; }
+  }
+
+  @-ms-keyframes slide {
+    100% { right: 10px; }
+  }
+
+  @-o-keyframes slide {
     100% { right: 10px; }
   }
 
   @-webkit-keyframes slide {
+    100% { right: 10px; }
+  }
+
+  @keyframes slide {
     100% { right: 10px; }
   }
 
