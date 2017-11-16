@@ -75,6 +75,72 @@
               </dl>
             </div>
           </section>
+
+          <section id="lgs-alert" class="component">
+
+            <h3>LgsAlert</h3>
+            <div class="example">
+              <lgs-alert 
+                class="bg-orange-lightest border-l-4 border-orange text-orange-dark p-4 my-8" 
+                :active="true" 
+                :message="{'title': 'title', 'body': 'body'}">    
+              </lgs-alert>
+              <lgs-alert 
+                class="bg-teal-lightest border-t-4 border-teal rounded rounded-b text-teal-darkest px-4 py-3 shadow-md my-8" 
+                :active="true" 
+                :message="{'title': 'title', 'body': 'body'}">    
+              </lgs-alert>
+              <lgs-alert 
+                class="bg-red-lightest border border-red-light text-red-dark px-4 py-3 rounded relative" 
+                :active="true"
+                :flyin="true"
+                :message="{'title': 'title', 'body': 'body'}">    
+              </lgs-alert>
+              <lgs-alert 
+                class="flex items-center bg-blue text-white text-sm font-bold px-4 py-3" 
+                :active="true"
+                :flyin="false"
+                :message="{'body': 'body'}"> 
+                <span class="absolute pin-t pin-b pin-r px-4 py-3" slot="dismiss">
+                  Close
+                </span>  
+              </lgs-alert>
+            </div>
+            <code class="code-block">
+              <pre>
+<<span>lgs-alert</span>
+  :active="true"
+  :flyin="false"
+  :message="{'title': 'title', 'body': 'body'}">
+  <<span>span class="absolute pin-t pin-b pin-r px-4 py-3" slot="dismiss"></span>
+    Close
+  <<span>/span></span>
+<<span>/lgs-alert></span>
+              </pre>
+            </code>
+            <div class="props">
+              <h4>Props</h4>
+              <dl>
+                <dt>active</dt>
+                <dd>type: boolean</dd>
+                <dd>default: true</dd>
+                <dd>Determines if the alert should be displayed or not</dd>
+                <dt>flyin</dt>
+                <dd>type: boolean</dd>
+                <dd>default: false</dd>
+                <dd>should the alert be displayed off screen and animated in</dd>
+                <dt>message</dt>
+                <dd>type: Object</dd>
+                <dd>default: {'title': '', 'body': ''}</dd>
+                <dd>The alert contents</dd>
+              </dl>
+              <h4 class="mt-8">Slots</h4>
+              <dl>
+                <dt>dismiss</dt>
+                <dd>Allows for the overriding of the close button</d>
+              </dl>
+            </div>
+          </section>
         </section>
 
         <section id="updating-the-project" class="container mx-auto">
