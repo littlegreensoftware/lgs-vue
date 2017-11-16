@@ -1,5 +1,5 @@
 <template>
-  <div class="lgs-alert" :class="{lgs-flyin: flyin}" v-if="show" role="alert">
+  <div class="lgs-alert" :class="{'lgs-flyin': flyin}" v-if="show" role="alert">
     <slot name="header"></slot>
     <slot name="body"></slot>
     <slot name="dismiss">
