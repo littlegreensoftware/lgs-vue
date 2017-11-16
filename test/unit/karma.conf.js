@@ -6,6 +6,10 @@
 var webpackConfig = require('../../build/webpack.test.conf')
 
 module.exports = function (config) {
+  var absolute_root = process.cwd(),
+      filesToInclude = absolute_root + '/test/unit/index.js';
+
+  console.log(filesToInclude);
   config.set({
     // to run in additional browsers:
     // 1. install corresponding karma launcher
@@ -14,14 +18,15 @@ module.exports = function (config) {
     browsers: ['PhantomJS'],
     frameworks: ['mocha', 'sinon-chai', 'phantomjs-shim'],
     reporters: ['spec', 'coverage'],
-    files: ['./index.js'],
+    files: [filesToInclude],
     preprocessors: {
-      './index.js': ['webpack', 'sourcemap']
+      filesToInclude: ['webpack', 'sourcemap']
     },
     webpack: webpackConfig,
     webpackMiddleware: {
       noInfo: true
     },
+    usePolling: true,
     coverageReporter: {
       dir: './coverage',
       reporters: [

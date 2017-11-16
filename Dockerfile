@@ -14,7 +14,7 @@ RUN apk update && apk add \
 
 RUN  npm install -g vue-cli
 
-COPY ./docs /usr/src/app
+COPY . /usr/src/app
 
 RUN npm i
 

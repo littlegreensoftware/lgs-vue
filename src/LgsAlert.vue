@@ -21,7 +21,7 @@
       'flyin': {
         default: false,
         type: Boolean
-      },
+      }
     },
     data: function () {
       return {
