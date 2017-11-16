@@ -39,6 +39,7 @@
 <style>
 
   .lgs-alert {
+    border: 1px solid #cccccc;
     position: relative;
   }
 
