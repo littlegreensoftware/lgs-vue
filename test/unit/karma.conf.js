@@ -22,6 +22,7 @@ module.exports = function (config) {
     webpackMiddleware: {
       noInfo: true
     },
+    usePolling: true,
     coverageReporter: {
       dir: './coverage',
       reporters: [

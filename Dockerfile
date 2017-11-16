@@ -1,20 +1,10 @@
-FROM node:8-alpine
+FROM node:8.9.1
 
 WORKDIR /usr/src/app
 
-RUN apk update && apk add \
-    autoconf \
-    automake \
-    gcc \
-    g++ \
-    make \
-    libpng-dev \
-    libtool \
-    nasm
-
 RUN  npm install -g vue-cli
 
-COPY ./docs /usr/src/app
+COPY . /usr/src/app
 
 RUN npm i
 
