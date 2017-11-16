@@ -14,7 +14,6 @@ describe('LgsAlert.vue', () => {
   })
 
   it('should dismiss alert when close button is clicked', done => {
-    // const Vue = createLocalVue()
     const wrapper = shallow(LgsAlert)
 
     assert.isNotOk(wrapper.isEmpty(), 'should not be empty')
