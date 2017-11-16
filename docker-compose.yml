@@ -2,11 +2,20 @@ version: "3"
 
 services:
 
-  node:
+  # docs:
+  #   build: .
+  #   command: ['npm', 'run', 'start']
+  #   volumes:
+  #     - ./docs/css:/usr/src/app/css:cached
+  #     - ./docs/js:/usr/src/app/js:cached
+  #     - ./docs/scss:/usr/src/app/scss:cached
+  #     - ./src:/usr/src/app/src:cached
+
+  test:
     build: .
-    command: ['npm', 'run', 'start']
+    command: ['npm', 'run', 'unit']
     volumes:
-      - ./docs/css:/usr/src/app/css:cached
-      - ./docs/js:/usr/src/app/js:cached
-      - ./docs/scss:/usr/src/app/scss:cached
+      - ./build:/usr/src/app/build:cached
+      - ./config:/usr/src/app/config:cached
+      - ./test:/usr/src/app/test:cached
       - ./src:/usr/src/app/src:cached
