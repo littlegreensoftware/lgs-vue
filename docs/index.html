@@ -82,25 +82,28 @@
             <div class="example">
               <lgs-alert 
                 class="bg-orange-lightest border-l-4 border-orange text-orange-dark p-4 my-8" 
-                :active="true" 
-                :message="{'title': 'title', 'body': 'body'}">    
+                :active="true">
+                <h3 slot="header">Title</h3>
+                <p slot="body">Body</p>
               </lgs-alert>
               <lgs-alert 
                 class="bg-teal-lightest border-t-4 border-teal rounded rounded-b text-teal-darkest px-4 py-3 shadow-md my-8" 
-                :active="true" 
-                :message="{'title': 'title', 'body': 'body'}">    
+                :active="true">
+                <h3 slot="header">Title</h1>
+                <p slot="body">Body</p>    
               </lgs-alert>
               <lgs-alert 
                 class="bg-red-lightest border border-red-light text-red-dark px-4 py-3 rounded relative" 
                 :active="true"
-                :flyin="true"
-                :message="{'title': 'title', 'body': 'body'}">    
+                :flyin="true">
+                <h3 slot="header">Title</h1>
+                <p slot="body">Body</p>    
               </lgs-alert>
               <lgs-alert 
                 class="flex items-center bg-blue text-white text-sm font-bold px-4 py-3" 
                 :active="true"
-                :flyin="false"
-                :message="{'body': 'body'}"> 
+                :flyin="false">
+                <p slot="body">Body</p>
                 <span class="absolute pin-t pin-b pin-r px-4 py-3" slot="dismiss">
                   Close
                 </span>  
@@ -110,8 +113,13 @@
               <pre>
 <<span>lgs-alert</span>
   :active="true"
-  :flyin="false"
-  :message="{'title': 'title', 'body': 'body'}">
+  :flyin="false">
+  <<span>h3 class="absolute pin-t pin-b pin-r px-4 py-3" slot="header"></span>
+    Title
+  <<span>/h3></span>
+  <<span>p class="absolute pin-t pin-b pin-r px-4 py-3" slot="body"></span>
+    Close
+  <<span>/p></span>
   <<span>span class="absolute pin-t pin-b pin-r px-4 py-3" slot="dismiss"></span>
     Close
   <<span>/span></span>
@@ -129,13 +137,13 @@
                 <dd>type: boolean</dd>
                 <dd>default: false</dd>
                 <dd>should the alert be displayed off screen and animated in</dd>
-                <dt>message</dt>
-                <dd>type: Object</dd>
-                <dd>default: {'title': '', 'body': ''}</dd>
-                <dd>The alert contents</dd>
               </dl>
               <h4 class="mt-8">Slots</h4>
               <dl>
+                <dt>header</dt>
+                <dd>Title/header content of the alert</d>
+                <dt>body</dt>
+                <dd>main body content of the alert</d>
                 <dt>dismiss</dt>
                 <dd>Allows for the overriding of the close button</d>
               </dl>
